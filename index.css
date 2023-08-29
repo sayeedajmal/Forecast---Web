@@ -1,0 +1,87 @@
+@media screen and (min-width: 814px) {
+  .current {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .current:hover {
+    scale: calc(1.2);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+@font-face {
+  font-family: "mova";
+  src: url("/images/Mova.otf");
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "mova";
+}
+
+.label {
+  background: -webkit-linear-gradient(90deg, #75510a, #b4904c);
+  font-size: 3rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  visibility: visible;
+}
+
+.search>input {
+  outline: none;
+  height: 8vh;
+  width: 0;
+  visibility: hidden;
+  text-align: center;
+  font-family: "mova";
+  filter: drop-shadow(0px 4px 3px #66430d);
+  padding: 1rem;
+  font-size: 20px;
+  margin-left: auto;
+  border: 1px dotted #805412;
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out;
+}
+
+.searchIcon {
+  font-size: 2rem;
+  display: block;
+  margin-right: auto;
+  /* margin-left: auto; */
+}
+
+.current {
+  margin-top: 5vh;
+  padding: 1rem;
+  border-radius: 20px;
+  background: -webkit-linear-gradient(180deg, #75510a, #f5d7a0);
+  filter: drop-shadow(8px 5px 15px black);
+  transition: 0.5s ease-in-out;
+}
+
+.current>img {
+  width: 80px;
+  float: right;
+  filter: drop-shadow(3px 8px 15px #b4904c);
+}
+
+.current>h2 {
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.current>h6 {
+  text-align: center;
+  margin: 0;
+  font-weight: lighter;
+  font-size: 10px;
+}
